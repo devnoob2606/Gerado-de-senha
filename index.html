@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerado</title>
+</head>
+<body>
+    <h3 class="logo">Gerado de senha</h3>
+    <main class="container-input">
+        <span>Tamanho  <span id="valor"></span> Caracteristicas</span>
+        <input type="range" class="slider" id="slider" min="5" max="25">
+        <button id="button" class="button-ctn" onclick="generatePassword()">Gera senha</button>
+    </main>
+    <div class="container-password hide" id="container-password">
+        <span class="tittle">Sua senha foi Gerada:</span>
+        <span class="password" id="password"></span>
+        <span class="tooltip">Clique para copiar.👆</span>
+
+    <script src="js/gerado.js"></script>
+    </div>
+</body>
+</html>
